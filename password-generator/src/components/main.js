@@ -8,7 +8,9 @@ export default function Main()
         //initializing a character set with captial letters, lower case letters,
         //numbers, and special characters
         const charset =
-          'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+[]{}|;:,.<>?';
+          'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+
+        const specialChars = '!@#$%^&*()_+[]{}|;:,.<>?';
         
         //initializing an empty array with the length of the parameter
         //(im using 15 when I call the function)
