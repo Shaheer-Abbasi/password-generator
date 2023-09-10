@@ -11,10 +11,24 @@ main{
   align-items: center;
 }
 
-
 .generate--button,
-.copy--button {
+.copy--button,
+.main--checkbox {
   margin-top: 20px;
+}
+
+.check--container{
+  display: flex;
+  justify-content: baseline;
+  align-items: baseline;
+}
+
+.main--checkbox{
+  width: 25px;
+}
+
+.label{
+  font-size: larger;
 }
 
 .generate--button{
@@ -30,7 +44,6 @@ main{
   border-radius: 15px;
   font-size: larger;
 }
-
 
 .main--textbox{
   display: block;
