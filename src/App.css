@@ -29,6 +29,7 @@ input[type=checkbox] {
   cursor: pointer;
   margin-right: 0.75rem;
   background-color: none;
+  outline: none;
 }
 
 input[type=checkbox]:before {
@@ -42,6 +43,10 @@ input[type=checkbox]:before {
   border: 2px solid var(--secondary);
   border-radius: 3px;
   background-color: var(--primary);
+}
+
+input[type=checkbox]:focus-visible:before { /* when element is tabbed to */
+  border: 2px solid var(--accent);
 }
 
 input[type=checkbox]:checked:after {
@@ -77,6 +82,7 @@ input[type=checkbox]:checked:before {
 
 button {
   border: none;
+  outline: none;
   cursor: pointer;
   background-color: var(--secondary);
   color: white;
@@ -84,4 +90,8 @@ button {
 
 button:hover {
   filter: brightness(85%);
+}
+
+button:focus-visible { /* when element is tabbed to */
+  border: 2px solid var(--accent);
 }

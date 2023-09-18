@@ -66,12 +66,19 @@ main > h1 {
 .main--textbox{
   display: block;
   margin: 0 2rem;
+  border: 2px solid var(--neutral);
+  outline: none;
   border-radius: 15px;
   font-weight: 700;
   font-size: larger;
   height: 50px;
   width: 75%; /* Change unit of width for responsiveness */
   padding: 0 1rem; /* Add internal padding to box */
+  text-align: center; /* align the text to the center of the box */
+}
+
+.main--textbox:focus-visible {
+  filter: brightness(85%);
 }
 
 @media screen and (max-width: 300px) {
