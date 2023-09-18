@@ -1,13 +1,14 @@
 import React from 'react';
+import './main.css';
 
 export default function Main()
 {
-    const [textBoxValue, setTextBoxValue] = React.useState('') 
-    const [includeSpecialChars, setIncludeSpecialChars] = React.useState(false)
+    const [textBoxValue, setTextBoxValue] = React.useState('');
+    const [includeSpecialChars, setIncludeSpecialChars] = React.useState(false);
 
     function handleCheckboxChange()
     {
-        setIncludeSpecialChars(!includeSpecialChars)
+        setIncludeSpecialChars(!includeSpecialChars);
     }
     
     function generateRandomString(length, includeSpecialChars) {
@@ -43,8 +44,8 @@ export default function Main()
     }
 
     function generateNewPassword(){
-        let randPassword = generateRandomString(15, includeSpecialChars)
-        setTextBoxValue(randPassword)
+        let randPassword = generateRandomString(15, includeSpecialChars);
+        setTextBoxValue(randPassword);
     }
 
     function copyToClipboard()
@@ -54,6 +55,7 @@ export default function Main()
 
     return (
         <main>
+            <h1>Generate a Password</h1>
             <input 
                 readOnly
                 className='main--textbox'
@@ -68,7 +70,7 @@ export default function Main()
                     checked={includeSpecialChars}
                     onChange={handleCheckboxChange}
                 />
-                <p className='label'>Do you want special characters in your password?</p>
+                <p className='label'>Special Characters?</p>
             </div>
             <button className='generate--button' onClick={generateNewPassword}>Generate</button>
             <button className='copy--button' onClick={copyToClipboard}>Copy to Clipboard</button>

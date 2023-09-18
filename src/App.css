@@ -1,56 +1,87 @@
+:root {
+  /* Imported CSS theme from randomly generated theme via daisyUI theme generator: 
+      https://daisyui.com/theme-generator/ */
+  --primary: #bfdb23;
+  --secondary: #4d8acc;
+  --accent: #024c91;
+  --neutral: #271a28;
+  --background: #322c49;
+  --info: #3961c6;
+  --success: #77e9b9;
+  --warning: #eeb259;
+  --error: #f32063;
+  background-color: var(--background);
+}
+
 * {
   margin: 0;
   padding: 0;
 }
 
-main{
-  height: 500px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.App {
+  min-height: 100vh;
 }
 
-.generate--button,
-.copy--button,
-.main--checkbox {
-  margin-top: 20px;
+
+/* Custom checkbox CSS */
+input[type=checkbox] {
+  position: relative;
+  cursor: pointer;
+  margin-right: 0.75rem;
+  background-color: none;
 }
 
-.check--container{
-  display: flex;
-  justify-content: baseline;
-  align-items: baseline;
-}
-
-.main--checkbox{
-  width: 25px;
-}
-
-.label{
-  font-size: larger;
-}
-
-.generate--button{
-  width: 150px;
-  height: 50px;
-  border-radius: 15px;
-  font-size: larger;
-}
-
-.copy--button{
-  width: 150px;
-  height: 50px;
-  border-radius: 15px;
-  font-size: larger;
-}
-
-.main--textbox{
+input[type=checkbox]:before {
+  content: "";
   display: block;
-  margin: 0 auto;
-  border-radius: 15px;
-  font-weight: 700;
-  font-size: larger;
-  height: 50px;
-  width: 1000px;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: -3.5px;
+  left: -3.25px;
+  border: 2px solid var(--secondary);
+  border-radius: 3px;
+  background-color: var(--primary);
+}
+
+input[type=checkbox]:checked:after {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 10px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(40deg);
+  position: absolute;
+  top: -1.5px;
+  left: 2.5px;
+  animation: checkedBox 0.3s linear 0.1s 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes checkedBox {
+  0% {
+    border-width: 0 2px 2px 0;
+  }
+
+  100% {
+    border: solid white;
+    border-width: 0 2px 2px 0;
+  }
+}
+
+input[type=checkbox]:checked:before {
+  background-color: var(--secondary);
+  transition: background-color ease-in 0.1s;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  background-color: var(--secondary);
+  color: white;
+}
+
+button:hover {
+  filter: brightness(85%);
 }
