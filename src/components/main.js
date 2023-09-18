@@ -59,7 +59,7 @@ export default function Main()
             <input 
                 readOnly
                 className='main--textbox'
-                type="textbox" 
+                type="password" 
                 placeholder='Here is your password'
                 value={textBoxValue}
             />
