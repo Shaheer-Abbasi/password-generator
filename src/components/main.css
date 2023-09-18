@@ -2,10 +2,6 @@
     designated for it. This is done for organizational purposes.
 */
 
-main::before {
-  background-color: blue;
-}
-
 main{
   /* height: 500px; */ /* Specifying a height here feels restrictive, so leaving this commented out */ 
   display: flex;
