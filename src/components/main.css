@@ -1,0 +1,81 @@
+/* Moved the CSS properties for the main component into this CSS file specifically 
+    designated for it. This is done for organizational purposes.
+*/
+
+main::before {
+  background-color: blue;
+}
+
+main{
+  /* height: 500px; */ /* Specifying a height here feels restrictive, so leaving this commented out */ 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-color: var(--primary);
+  border-radius: 15px;
+  margin: 2rem;
+  padding: 1.5rem 0;
+}
+
+main > h1 {
+  color: var(--neutral);
+  text-align: center;
+  padding: 0 2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* .generate--button,
+.copy--button,
+.main--checkbox {
+  margin-top: 20px;
+} */   /* This is unnecessary as we can simply utilize the gap property to achieve the 
+          same/similar result */
+
+.check--container{
+  display: flex;
+  align-items: center; /* Center the checkbox with its label instead */
+  width: max-content; /* specifying the width to this unit enables the content to be aligned 
+                        properly to the center (added media query below to change for mobile) */
+}
+
+.main--checkbox{
+  /* width: 25px; */
+  /* margin-right: 1rem; */  /* changed properties of checkbox globally in App.css file */
+}
+
+.label{
+  font-size: larger;
+}
+
+.generate--button{
+  width: 150px;
+  height: 50px;
+  border-radius: 15px;
+  font-size: larger;
+}
+
+.copy--button{
+  width: 150px;
+  height: 50px;
+  border-radius: 15px;
+  font-size: larger;
+}
+
+.main--textbox{
+  display: block;
+  margin: 0 2rem;
+  border-radius: 15px;
+  font-weight: 700;
+  font-size: larger;
+  height: 50px;
+  width: 75%; /* Change unit of width for responsiveness */
+  padding: 0 1rem; /* Add internal padding to box */
+}
+
+@media screen and (max-width: 300px) {
+  .check--container {
+    width: min-content;
+  }
+}
