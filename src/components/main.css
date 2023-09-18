@@ -54,7 +54,7 @@ main > h1 {
 
 .copy--button{
   width: 150px;
-  height: 50px;
+  height: 55px;
   border-radius: 15px;
   font-size: larger;
 }
@@ -68,7 +68,7 @@ main > h1 {
   font-weight: 700;
   font-size: larger;
   height: 50px;
-  width: 75%; /* Change unit of width for responsiveness */
+  width: 70%; /* Change unit of width for responsiveness */
   padding: 0 1rem; /* Add internal padding to box */
   text-align: center; /* align the text to the center of the box */
 }

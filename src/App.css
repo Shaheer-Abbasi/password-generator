@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+
 :root {
   /* Imported CSS theme from randomly generated theme via daisyUI theme generator: 
       https://daisyui.com/theme-generator/ */
@@ -16,6 +18,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Tilt Neon', sans-serif;
 }
 
 .App {
