@@ -219,6 +219,7 @@ export default function Main()
             <div className='remove--container'>
                 <div className='remove-label-container'>
                     <p className='remove--label'>Remove Special Characters?</p>
+                    <p className='special-characters-list'>Special Characters List: !@#$%^&amp;*()_+[]{}|;:,.&lt;&gt;?</p>
                 </div>
                 <div className='remove-input-container'>
                     <input 
