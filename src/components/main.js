@@ -93,7 +93,7 @@ export default function Main()
         
         setTextBoxValue(randPassword);
         setToolTipDisplay("Copy to Clipboard");
-        console.log(`displayed password: ${randPassword} and password length: ${passwordLength}`)
+        console.log(`displayed password: ${randPassword} and password length: ${randPassword.length}`)
     }
 
     function containsSpecialChars(pass, specialChars)
