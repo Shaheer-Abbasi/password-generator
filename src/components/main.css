@@ -36,12 +36,74 @@ main > h1 {
                         properly to the center (added media query below to change for mobile) */
 }
 
-.main--checkbox{
-  /* width: 25px; */
-  /* margin-right: 1rem; */  /* changed properties of checkbox globally in App.css file */
+.length--label{
+  margin-left: 2rem;
+  margin-right: 1rem;
 }
 
-.label{
+.slider--count{
+  font-size: larger;
+  margin-left: 0.5rem;
+}
+
+.label,
+.remove--label,
+.length--label,
+.special-characters-list{
+  font-size: larger;
+}
+
+.main--text-entry{
+  border: 1px solid var(--neutral);
+  outline: none;
+  border-radius: 15px;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.remove--container{
+  background-color: var(--warning);
+  padding: 5px 5px;
+  border-radius: 15px;
+}
+
+.warning--container{
+  background-color: var(--error);
+  padding: 2px 4px;
+  border-radius: 15px;
+}
+
+.warning--text{
+  color: white;
+}
+
+.remove--label{
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.special-characters-list{
+  margin-bottom: 1rem;
+}
+
+.remove-input-container{
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.remove-input-container > button{
+  padding: .25rem .75rem;
+  border-radius: 15px;
+  background-color: var(--accent);
+}
+
+.show--button{
+  width: 150px;
+  height: 50px;
+  border-radius: 15px;
   font-size: larger;
 }
 
@@ -57,6 +119,44 @@ main > h1 {
   height: 55px;
   border-radius: 15px;
   font-size: larger;
+  margin: 0 0.5rem;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  background-color: var(--neutral);
+  color: #fff;
+  text-align: center;
+  border-radius: 4px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 100%; /* Position it to the right of the button */
+  transform: translateY(-50%); /* Center vertically */
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tooltip .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  right: 100%; /* To the left of the tooltip */
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent var(--neutral) transparent transparent;
 }
 
 .main--textbox{
