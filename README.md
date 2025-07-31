@@ -18,31 +18,8 @@ These instructions will help you set up and run the Password Generator on your l
 
 To run this application, you need to have [Node.js](https://nodejs.org/) installed on your computer.
 
-### Installation
-
-1. Clone the repository to your local machine:
-
-   ```bash
-   git clone https://github.com/your-username/password-generator.git
-
-2. Navigate to the project directory:
-
-   ```bash
-   cd password-generator
-
-3. Install the required dependencies:
-
-   ```bash
-   npm install
-
-## Running the Application
-
-1. Start the development server:
-
-   ```bash
-   npm start
-
-2. Open your web browser and access the application at http://localhost:3000.
+### Access
+[Click here!](https://password-generator-mu-peach-64.vercel.app/)
 
 ### Usage
 
